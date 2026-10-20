@@ -40,6 +40,18 @@
 
 | | |
 |---|---|
+| ![Desk — KPIs, equity curve, daily P&L, open session](docs/img/desk.png) | ![Log trade — symbol filtered by market, Gross / Fees / Net, exchange fee profile with maker / taker](docs/img/log-trade.png) |
+| **Desk** — net P&L, win rate, profit factor, expectancy, drawdown, equity curve and daily P&L for the open session's account. | **Log trade** — one drawer for the whole ticket. Gross, fees and net update live; crypto fees come from your exchange profile (maker / taker for entry and exit). |
+| ![Session — open session, morning prep, close-out and day log](docs/img/session.png) | ![Ideas — every trade idea with status filters, carry history and bulk actions](docs/img/ideas.png) |
+| **Session** — open a trading day by date, prep before the open, close out after the last trade, and browse the day log. | **Ideas** — every trade idea across sessions: filter, search, edit, carry into today, archive or delete. |
+| ![Trade review — numbers, timing, plan and after-trade notes](docs/img/trade-review.png) | ![Analytics — equity, drawdown, win-rate gauge, consistency](docs/img/analytics.png) |
+| **Trade review** — a read-only summary of one ticket, with previous / next and Edit. | **Analytics** — equity and drawdown, win rate vs break-even, consistency, P&L calendar, playbook performance and more. |
+| ![Copy trade to account — same risk % or same size](docs/img/copy-to-account.png) | ![Settings — exchange fee profiles for Binance and Bybit](docs/img/fee-profiles.png) |
+| **Copy to account** — one-time copy of a ticket to your other accounts, sized by the same risk % or the same size. | **Exchange fee profiles** — Binance USDⓈ-M and Bybit presets, editable, plus your own exchanges. |
+
+<p align="center"><img src="docs/img/desk-light.png" alt="Blotter — light theme" width="640"><br><i>Light theme. All screenshots use fake demo data.</i></p>
+
+---|---|
 | ![Desk — KPIs, equity curve, daily P&L, 14-week heatmap, risk rules](docs/img/desk.png) | ![Log trade — symbol search, Long/Short, levels, confluence, playbook, risk & session tiles](docs/img/log-trade.png) |
 | **Desk** — net P&L, win rate, profit factor, expectancy, drawdown, equity curve, daily P&L and a 14-week heatmap. | **Log trade** — one drawer for the whole ticket: entry, stop, target, size calculator, chart screenshots, confluence and playbook. |
 | ![Session — morning prep, close-out and day log](docs/img/session.png) | ![Analytics — P&L calendar, playbook performance, R-distribution, hour × weekday](docs/img/analytics.png) |
@@ -51,34 +63,42 @@
 
 ## Features
 
-**Journal**
-- **Log trade drawer** — searchable symbol box with your recent symbols, Long/Short, entry / stop / target / exit, open and close time in your time zone.
-- **147 built-in instruments** across futures, forex, crypto, stocks, options and CFDs with correct contract multipliers and tick sizes; edit or add your own.
-- **Position-size calculator** from your risk per trade (% of current equity) and stop distance.
-- **Fees, swap and FX** — per-market defaults, per-symbol overrides, and conversion to your account currency.
-- **Chart screenshots** — Plan / In trade / After, attached from a file or a link.
-- **Confluence & playbook** — price levels, context, mapped levels, setups, notes.
-- **Risk, Session, Idea, Execution and After tiles** — emotions, mistakes, plan adherence, MAE / MFE.
-- **Draft autosave** — an unsaved ticket is restored when you reopen Log trade.
-
-**Daily routine**
+**Sessions — your trading day, by date**
+- **Manual, date-based sessions per account.** You open the session you are trading (today, or any other date) and close it when you are done. Each account has its own open session, and new trades go into it.
 - **Morning prep** — mood, news, bias, goals and trade ideas before the open.
-- **Close-out** — grade your plan, execution, risk and emotional control at the end of the day.
+- **Close-out** — grade your plan, execution, risk and emotional control, and mark each idea Taken, Skipped, Missed or Carry.
 - **Day log** — every trading day with P&L, trades, grade and mood; searchable by notes and symbols.
 - **Trading-day start** — group trades by a custom day boundary (e.g. 17:00 New York for futures/FX).
 
+**Trade ideas**
+- Plan ideas with symbol, direction, setup, levels and notes, then **Log trade from an idea** to prefill the ticket.
+- **Carry over:** ideas still open from earlier sessions are suggested in the next Morning prep — carry them in, or **Dismiss** the ones that are no longer relevant.
+- **Ideas manager** — every idea for the account in one place: filter by Open / Carried / Taken / Skipped / Missed / Archived, date range and symbol, search, edit inline, change status, carry into the open session, archive or delete — one at a time or in bulk. Each idea shows its origin day and carry history.
+
+**Journal**
+- **Log trade drawer** — Long/Short, entry / stop / target / exit, open and close time in your time zone, chart screenshots (Plan / In trade / After), confluence, playbook and the Risk, Session, Idea, Execution, After and *Also log to* tiles.
+- **Symbol search filtered by market** — pick Crypto, Futures, Forex… and the list shows only that market's instruments (with a fallback to other markets if nothing matches).
+- **Built-in instruments** across futures, forex, crypto (including Binance TradFi perps **SPYUSDT** and **QQQUSDT**), stocks, options and CFDs with contract multipliers and tick sizes; edit or add your own.
+- **Gross / Fees / Net** shown live in the drawer header and in every trade review.
+- **Exchange fee profiles** — Binance USDⓈ-M (0.02% maker / 0.05% taker) and Bybit (0.02% / 0.055%) presets, editable, plus your own. Choose maker or taker separately for entry and exit: *fee = entry notional × entry rate + exit notional × exit rate*. Futures keep per-contract fees; saved trades keep their stored fees.
+- **Position-size calculator** from your risk per trade (% of current equity) and stop distance.
+- **Chip editing** for tags, mistakes and goals — type, press Enter, remove with one click.
+- **Trade review** — a read-only summary of any ticket with previous / next navigation and one-click Edit.
+- **Copy trade to account** — copy a ticket to other accounts, sized by the same risk % or the same size, using each account's fees and open session. Copies are independent afterwards.
+- **Draft autosave** — an unsaved ticket is restored when you reopen Log trade.
+
 **Review**
-- **Desk** — KPIs, equity curve, daily P&L, heatmap, recent trades and a "today" strip with your loss limits.
-- **Analytics** — equity and drawdown, win rate, consistency, streaks, P&L calendar, playbook performance, R-multiple distribution, hour × weekday, emotions vs results, mistakes, MAE / MFE.
-- **Blotter** — full trade table with filters, search and inline editing.
+- **Desk** — KPIs, equity curve, daily P&L, recent trades and a "today" strip with your loss limits and open session.
+- **Analytics** — equity and drawdown, win rate vs break-even (with a minimum-sample notice), consistency, streaks, P&L calendar, playbook performance, R-multiple distribution, hour × weekday, emotions vs results, mistakes, MAE / MFE.
+- **Blotter** — full trade table with filters, search, review and copy.
 - **Risk rules** — daily loss limit in R and %, risk per trade; warnings before you break them.
 
-**Data**
+**Money & data**
 - **Multiple accounts** with their own starting balance and currency.
-- **Full backup** to a single `.zip` (trades, screenshots, settings) and restore.
-- **CSV** export/import for Excel and Google Sheets, with a documented column map and an empty template.
-- **Automatic backups** on every close (last 10 kept).
-- Dark and light themes, collapsible sidebar, keyboard-friendly.
+- **Live FX** — daily ECB reference rates convert P&L, fees and risk into your account currency; manual overrides are kept, and offline the last saved rates are used.
+- **Full backup** to a single `.zip` (trades, screenshots, settings) and restore; **CSV** export/import with a documented column map; **automatic backups** on every close (last 10 kept).
+- **Day and night themes** (or follow Windows), collapsible sidebar, keyboard-friendly.
+- **Automatic updates** for the installer version (see [Updating](#updating)).
 
 ---
 
@@ -94,6 +114,8 @@ Blotter makes **exactly two kinds of network requests**, both read-only and both
 | FX rates (ECB reference rates) | `api.frankfurter.dev` | Once per day on start (*Settings → FX rates → Auto-update daily*, can be turned off) and when you click *Update rates* | The list of currency codes, e.g. `?from=USD&to=EUR,GBP,JPY…` |
 
 That's it. Offline? Blotter works fully offline and keeps the last saved FX rates.
+
+**Hardening.** The app window runs sandboxed with context isolation and no Node.js access; a strict Content-Security-Policy only allows the FX host above; navigation away from the app and new windows are blocked (links open in your browser). Updates are verified against the SHA-512 in `latest.yml` before they run.
 
 > If you paste an `https://` link to a chart image (for example a TradingView snapshot), the image is loaded from that site when you view the trade — just like opening the link in a browser.
 
@@ -153,12 +175,12 @@ Each release page lists the hashes for that version in this format:
 | `Blotter-Setup-X.Y.Z.exe` | `<SHA256_SETUP>` |
 | `Blotter-X.Y.Z-portable.exe` | `<SHA256_PORTABLE>` |
 
-**Current release example — [v0.3.0](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.0):**
+**Current release — [v0.3.4](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.4):**
 
 | File | SHA-256 |
 |---|---|
-| `Blotter-Setup-0.3.0.exe` | `7b7e779fbe5699f56aefb05cb0e33c25a53b6fd9246a300eb2b298930fa8d829` |
-| `Blotter-0.3.0-portable.exe` | `fd0b8508cc530068ed13cd3509a7a6c9f617687b1c28075c11a4b9f7d0192252` |
+| `Blotter-Setup-0.3.4.exe` | `6db940e0a8f28559a83e6e611620b689d4fa14102cc0225066de9abcc0ee0b34` |
+| `Blotter-0.3.4-portable.exe` | `3b637bac780f23693a6734fdaa01c274f8f058d60309cc223b1e9795e088cd38` |
 
 For newer versions, always use the hashes on that version's release page.
 
@@ -226,14 +248,14 @@ Yes — via CSV (*Settings → Import from Sheets*: upload a file or paste a ran
 **Is it open source?**
 Not at the moment. The app is free to use; the source is kept private. You can verify every release by hash and VirusTotal, and you can check the network table above with any firewall (e.g. Windows Defender Firewall, GlassWire, Wireshark).
 
-**Why is the download ~85 MB?**
+**Why is the download ~110 MB?**
 Blotter is built on Electron, which bundles its own Chromium engine so the app looks and behaves the same on every PC.
 
 **Mac or Linux?**
 Windows only for now.
 
 **Which markets are supported?**
-Futures, forex, crypto, stocks, options and CFDs. Instruments not in the list can be added with your own multiplier, tick size and currency.
+Futures, forex, crypto (including Binance TradFi perps such as SPYUSDT and QQQUSDT), stocks, options and CFDs. Instruments not in the list can be added with your own multiplier, tick size and currency.
 
 **I found a bug / have an idea.**
 Please [open an issue](https://github.com/kishikaisei666/blotter-desktop/issues). Never post your database or screenshots of personal account data publicly.
@@ -253,7 +275,9 @@ The quotes shown in the app are attributed to their authors and sources for educ
 
 ## License
 
-Blotter is **freeware**: free to download and use for personal purposes. The software is proprietary — © 2026 kishikaisei. All rights reserved. Redistribution, resale, modification or reverse-engineering of the binaries is not permitted.
+**© 2026 kishikaisei. Free to use; no resale or redistribution.**
+
+Blotter is freeware: free to download and use. The software is proprietary and all rights are reserved — reselling, redistributing, modifying or reverse-engineering the binaries is not permitted. Please share a link to this page instead of the files.
 
 Blotter includes open-source components (Electron, Chromium, React, better-sqlite3, JSZip and others) under their own licenses; see `LICENSE.electron.txt` and `LICENSES.chromium.html` in the install folder.
 
