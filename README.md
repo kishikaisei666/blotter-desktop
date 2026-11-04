@@ -74,6 +74,7 @@
 - Plan ideas with symbol, direction, setup, levels and notes, then **Log trade from an idea** to prefill the ticket.
 - **Carry over:** ideas still open from earlier sessions are suggested in the next Morning prep — carry them in, or **Dismiss** the ones that are no longer relevant.
 - **Ideas manager** — every idea for the account in one place: filter by Open / Carried / Taken / Skipped / Missed / Archived, date range and symbol, search, edit inline, change status, carry into the open session, archive or delete — one at a time or in bulk. Each idea shows its origin day and carry history.
+- **Risk calc** — size a position on any instrument: risk by $, % of balance or R; position size, risk in $ and ticks, R:R, fees (futures per contract, Binance/Bybit maker/taker per side) and net risk; notional and margin at your leverage for crypto; one click to log the trade prefilled.
 
 **Journal**
 - **Log trade drawer** — Long/Short, entry / stop / target / exit, open and close time in your time zone, chart screenshots (Plan / In trade / After), confluence, playbook and the Risk, Session, Idea, Execution, After and *Also log to* tiles.
@@ -175,12 +176,12 @@ Each release page lists the hashes for that version in this format:
 | `Blotter-Setup-X.Y.Z.exe` | `<SHA256_SETUP>` |
 | `Blotter-X.Y.Z-portable.exe` | `<SHA256_PORTABLE>` |
 
-**Current release — [v0.3.4](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.4):**
+**Current release — [v0.3.5](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.5):**
 
 | File | SHA-256 |
 |---|---|
-| `Blotter-Setup-0.3.4.exe` | `6db940e0a8f28559a83e6e611620b689d4fa14102cc0225066de9abcc0ee0b34` |
-| `Blotter-0.3.4-portable.exe` | `3b637bac780f23693a6734fdaa01c274f8f058d60309cc223b1e9795e088cd38` |
+| `Blotter-Setup-0.3.5.exe` | `8510e23ef4ff9aee7d32de4dd0d0668e146d2e5e2289cad653019b5f012c59ac` |
+| `Blotter-0.3.5-portable.exe` | `1dfc6dfcd5279b8c79af3f273c74a9f01ec3b299161bb67e75d6ae699c0eef1c` |
 
 For newer versions, always use the hashes on that version's release page.
 
