@@ -176,12 +176,12 @@ Each release page lists the hashes for that version in this format:
 | `Blotter-Setup-X.Y.Z.exe` | `<SHA256_SETUP>` |
 | `Blotter-X.Y.Z-portable.exe` | `<SHA256_PORTABLE>` |
 
-**Current release — [v0.3.5](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.5):**
+**Current release — [v0.3.6](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.6):**
 
 | File | SHA-256 |
 |---|---|
-| `Blotter-Setup-0.3.5.exe` | `8510e23ef4ff9aee7d32de4dd0d0668e146d2e5e2289cad653019b5f012c59ac` |
-| `Blotter-0.3.5-portable.exe` | `1dfc6dfcd5279b8c79af3f273c74a9f01ec3b299161bb67e75d6ae699c0eef1c` |
+| `Blotter-Setup-0.3.6.exe` | `315b136d2191453d66cf75f7925d7e00dbb015f068a951658b09a4f41bc2d55e` |
+| `Blotter-0.3.6-portable.exe` | `96ae62b20b5ae1d3a4389289ee584ebe58cdd61f61aa49a6eb11597eb7362b4f` |
 
 For newer versions, always use the hashes on that version's release page.
 
