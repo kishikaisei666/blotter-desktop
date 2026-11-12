@@ -89,16 +89,17 @@
 - **Draft autosave** — an unsaved ticket is restored when you reopen Log trade.
 
 **Review**
+- **Four Box weekly review** — a Review page for the Monday–Sunday journal week: last week's rule, 2×2 process boxes, a separate breakeven count, an Unsorted strip for unmarked closed trades, box-4 pattern hints, and a rule of the week plus history. After-tile self-checks and a box badge on Trade review. Partial counts as a break; boxes use Net P&L.
 - **Desk** — KPIs, equity curve, daily P&L, recent trades and a "today" strip with your loss limits and open session.
 - **Analytics** — equity and drawdown, win rate vs break-even (with a minimum-sample notice), consistency, streaks, P&L calendar, playbook performance, R-multiple distribution, hour × weekday, emotions vs results, mistakes, MAE / MFE.
-- **Blotter** — full trade table with filters, search, review and copy.
+- **Blotter** — full trade table with filters, search, review and copy. Click a row for a compact preview (Gross / Fees / Net, R, prices, plan / after, mistakes, emotion, chart thumbs) with Full review and Edit.
 - **Risk rules** — daily loss limit in R and %, risk per trade; warnings before you break them.
 
 **Money & data**
 - **Multiple accounts** with their own starting balance and currency.
 - **Live FX** — daily ECB reference rates convert P&L, fees and risk into your account currency; manual overrides are kept, and offline the last saved rates are used.
 - **Full backup** to a single `.zip` (trades, screenshots, settings) and restore; **CSV** export/import with a documented column map; **automatic backups** on every close (last 10 kept).
-- **Day and night themes** (or follow Windows), collapsible sidebar, keyboard-friendly.
+- **Day and night themes** (or follow Windows), collapsible sidebar, keyboard-friendly. Dark theme is graphite with a muted gold accent and tabular numbers. On Windows 11 the sidebar can use Mica (solid fallback on Windows 10).
 - **Automatic updates** for the installer version (see [Updating](#updating)).
 
 ---
@@ -176,12 +177,12 @@ Each release page lists the hashes for that version in this format:
 | `Blotter-Setup-X.Y.Z.exe` | `<SHA256_SETUP>` |
 | `Blotter-X.Y.Z-portable.exe` | `<SHA256_PORTABLE>` |
 
-**Current release — [v0.3.6](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.6):**
+**Current release — [v0.3.7](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.7):**
 
 | File | SHA-256 |
 |---|---|
-| `Blotter-Setup-0.3.6.exe` | `315b136d2191453d66cf75f7925d7e00dbb015f068a951658b09a4f41bc2d55e` |
-| `Blotter-0.3.6-portable.exe` | `96ae62b20b5ae1d3a4389289ee584ebe58cdd61f61aa49a6eb11597eb7362b4f` |
+| `Blotter-Setup-0.3.7.exe` | `65f129a3e3d80d3e80e387370b09e9e5dad2c362162f9864f55772fbc4940083` |
+| `Blotter-0.3.7-portable.exe` | `40066e4d701926893e7d25bcd37bd874292eccffffe376d9eabf3bcb765c5e09` |
 
 For newer versions, always use the hashes on that version's release page.
 
