@@ -43,7 +43,7 @@
 | ![Desk — KPIs, equity curve, daily P&L, open session](docs/img/desk.png) | ![Log trade — symbol filtered by market, Gross / Fees / Net, exchange fee profile with maker / taker](docs/img/log-trade.png) |
 | **Desk** — net P&L, win rate, profit factor, expectancy, drawdown, equity curve and daily P&L for the open session's account. | **Log trade** — one drawer for the whole ticket. Gross, fees and net update live; crypto fees come from your exchange profile (maker / taker for entry and exit). |
 | ![Session — open session, morning prep, close-out and day log](docs/img/session.png) | ![Ideas — every trade idea with status filters, carry history and bulk actions](docs/img/ideas.png) |
-| **Session** — open a trading day by date, prep before the open, close out after the last trade, and browse the day log. | **Ideas** — every trade idea across sessions: filter, search, edit, carry into today, archive or delete. |
+| **Session** — open a trading day by date, prep before the open, close out after the last trade, and browse the day log. | **Ideas** (a tab in Session) — every trade idea across sessions: filter, search, edit, carry into today, archive or delete. |
 | ![Trade review — numbers, timing, plan and after-trade notes](docs/img/trade-review.png) | ![Analytics — equity, drawdown, win-rate gauge, consistency](docs/img/analytics.png) |
 | **Trade review** — a read-only summary of one ticket, with previous / next and Edit. | **Analytics** — equity and drawdown, win rate vs break-even, consistency, P&L calendar, playbook performance and more. |
 | ![Copy trade to account — same risk % or same size](docs/img/copy-to-account.png) | ![Settings — exchange fee profiles for Binance and Bybit](docs/img/fee-profiles.png) |
@@ -69,17 +69,21 @@
 - **Close-out** — grade your plan, execution, risk and emotional control, and mark each idea Taken, Skipped, Missed or Carry.
 - **Day log** — every trading day with P&L, trades, grade and mood; searchable by notes and symbols.
 - **Trading-day start** — group trades by a custom day boundary (e.g. 17:00 New York for futures/FX).
+- **Today and Ideas tabs** — Session holds both your day and your ideas. Morning prep shows your rules read-only; close-out asks "Followed my rules today?" (Yes / Partly / No) and shows your After routine; a During reminder shows while the session is open.
+
+**Trading plan — My rules in Playbook**
+- One place per account for your **entry checklist** (add, remove, reorder), **max risk per trade** and **daily loss limit** (as % or amount, using the same account risk settings as Desk and Risk calc), **"I stop trading for the day when…"**, your recurring **trigger** (mistake, when it happens, what you'll do next time) and a **Before / During / After** routine.
 
 **Trade ideas**
 - Plan ideas with symbol, direction, setup, levels and notes, then **Log trade from an idea** to prefill the ticket.
 - **Carry over:** ideas still open from earlier sessions are suggested in the next Morning prep — carry them in, or **Dismiss** the ones that are no longer relevant.
-- **Ideas manager** — every idea for the account in one place: filter by Open / Carried / Taken / Skipped / Missed / Archived, date range and symbol, search, edit inline, change status, carry into the open session, archive or delete — one at a time or in bulk. Each idea shows its origin day and carry history.
-- **Risk calc** — size a position on any instrument: risk by $, % of balance or R; position size, risk in $ and ticks, R:R, fees (futures per contract, Binance/Bybit maker/taker per side) and net risk; notional and margin at your leverage for crypto; one click to log the trade prefilled.
+- **Ideas tab** — every idea for the account in one place: filter by Open / Carried / Taken / Skipped / Missed / Archived, date range and symbol, search, edit inline, change status, carry into the open session, archive or delete — one at a time or in bulk. Each idea shows its origin day and carry history.
+- **Risk calc** — a right-side drawer from the sidebar or shortcut 4 on any page. Size a position on any instrument: risk by $, % of balance or R; position size, risk in $ and ticks, R:R, fees (futures per contract, Binance/Bybit maker/taker per side) and net risk; notional and margin at your leverage for crypto; one click to log the trade prefilled, or save a planned draft.
 
 **Journal**
 - **Log trade drawer** — Long/Short, entry / stop / target / exit, open and close time in your time zone, chart screenshots (Plan / In trade / After), confluence, playbook and the Risk, Session, Idea, Execution, After and *Also log to* tiles.
 - **Symbol search filtered by market** — pick Crypto, Futures, Forex… and the list shows only that market's instruments (with a fallback to other markets if nothing matches).
-- **Built-in instruments** across futures, forex, crypto (including Binance TradFi perps **SPYUSDT** and **QQQUSDT**), stocks, options and CFDs with contract multipliers and tick sizes; edit or add your own.
+- **Built-in instruments** across futures, forex, crypto (including Binance TradFi perps **SPYUSDT** and **QQQUSDT**, and bundled **Bybit** and **Bitunix** USDT linear perpetuals grouped by exchange), stocks, options and CFDs with contract multipliers and tick sizes; edit or add your own.
 - **Gross / Fees / Net** shown live in the drawer header and in every trade review.
 - **Exchange fee profiles** — Binance USDⓈ-M (0.02% maker / 0.05% taker) and Bybit (0.02% / 0.055%) presets, editable, plus your own. Choose maker or taker separately for entry and exit: *fee = entry notional × entry rate + exit notional × exit rate*. Futures keep per-contract fees; saved trades keep their stored fees.
 - **Position-size calculator** from your risk per trade (% of current equity) and stop distance.
@@ -90,6 +94,7 @@
 
 **Review**
 - **Four Box weekly review** — a Review page for the Monday–Sunday journal week: last week's rule, 2×2 process boxes, a separate breakeven count, an Unsorted strip for unmarked closed trades, box-4 pattern hints, and a rule of the week plus history. After-tile self-checks and a box badge on Trade review. Partial counts as a break; boxes use Net P&L.
+- **Monthly review** — a Week / Month switch on Review. Month adds an automatic scorecard (reviewed trades, followed rules, adherence %, most frequent mistake), monthly questions including "What did I change in my strategy and why?", a next review date, past months, and goals for the first 30 days and four 12-month stages.
 - **Desk** — KPIs, equity curve, daily P&L, recent trades and a "today" strip with your loss limits and open session.
 - **Analytics** — equity and drawdown, win rate vs break-even (with a minimum-sample notice), consistency, streaks, P&L calendar, playbook performance, R-multiple distribution, hour × weekday, emotions vs results, mistakes, MAE / MFE.
 - **Blotter** — full trade table with filters, search, review and copy. Click a row for a compact preview (Gross / Fees / Net, R, prices, plan / after, mistakes, emotion, chart thumbs) with Full review and Edit.
@@ -108,16 +113,17 @@
 
 Blotter is a local app. **There is no account, no sign-in, no analytics, no telemetry and no ads.** Your trades, notes and screenshots never leave your computer unless you export them yourself.
 
-Blotter makes **exactly two kinds of network requests**, both read-only and both without any of your data:
+Blotter makes **exactly three kinds of network requests**, all read-only and all without any of your data:
 
 | Purpose | Host | When | What is sent |
 |---|---|---|---|
 | Update check | `github.com` / `objects.githubusercontent.com` (this repository's Releases) | On start (if enabled) and when you click *Check for updates* (*Settings → About and updates*) | A standard HTTPS request for `latest.yml`; if a newer version exists, the installer version downloads the new Setup file |
 | FX rates (ECB reference rates) | `api.frankfurter.dev` | Once per day on start (*Settings → FX rates → Auto-update daily*, can be turned off) and when you click *Update rates* | The list of currency codes, e.g. `?from=USD&to=EUR,GBP,JPY…` |
+| Exchange symbol lists (public USDT perpetuals) | `api.bybit.com`, `fapi.bitunix.com` | Only when you click *Update symbols* (*Settings → Exchange symbols*); a symbol list is bundled with the app, so this is optional | Nothing but a fixed public request for the instrument list; no API keys |
 
-That's it. Offline? Blotter works fully offline and keeps the last saved FX rates.
+That's it. Offline? Blotter works fully offline and keeps the last saved FX rates and symbol lists.
 
-**Hardening.** The app window runs sandboxed with context isolation and no Node.js access; a strict Content-Security-Policy only allows the FX host above; navigation away from the app and new windows are blocked (links open in your browser). Updates are verified against the SHA-512 in `latest.yml` before they run.
+**Hardening.** The app window runs sandboxed with context isolation and no Node.js access; a strict Content-Security-Policy only allows the FX host above (symbol lists are fetched by the main process from the two allowlisted hosts only); navigation away from the app and new windows are blocked (links open in your browser). Updates are verified against the SHA-512 in `latest.yml` before they run.
 
 > If you paste an `https://` link to a chart image (for example a TradingView snapshot), the image is loaded from that site when you view the trade — just like opening the link in a browser.
 
@@ -177,12 +183,12 @@ Each release page lists the hashes for that version in this format:
 | `Blotter-Setup-X.Y.Z.exe` | `<SHA256_SETUP>` |
 | `Blotter-X.Y.Z-portable.exe` | `<SHA256_PORTABLE>` |
 
-**Current release — [v0.3.7](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.7):**
+**Current release — [v0.3.8](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.8):**
 
 | File | SHA-256 |
 |---|---|
-| `Blotter-Setup-0.3.7.exe` | `65f129a3e3d80d3e80e387370b09e9e5dad2c362162f9864f55772fbc4940083` |
-| `Blotter-0.3.7-portable.exe` | `40066e4d701926893e7d25bcd37bd874292eccffffe376d9eabf3bcb765c5e09` |
+| `Blotter-Setup-0.3.8.exe` | `dcb394f98796dea6b54476117ee96aebff5ab90a79b42b5665d4cdafdc16c5d2` |
+| `Blotter-0.3.8-portable.exe` | `9a2831326e92ad6915617718de48de64e36f17bc245f4f45f95ae1cff5ca4897` |
 
 For newer versions, always use the hashes on that version's release page.
 
