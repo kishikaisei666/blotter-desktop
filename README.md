@@ -81,8 +81,8 @@
 - **Risk calc** — a right-side drawer from the calculator icon in the sidebar footer or shortcut 4 on any page. Size a position on any instrument: risk by $, % of balance or R; position size, risk in $ and ticks, R:R, fees (futures per contract, Binance/Bybit maker/taker per side) and net risk; notional and margin at your leverage for crypto; one click to log the trade prefilled, or save a planned draft. **Add to open trade** mode sizes an add-on against an open trade's stop and shows the new average entry, total size, risk at the stop and how much of the daily cap the add uses; one click adds the fill.
 
 **Journal**
-- **Log trade drawer** — Long/Short, entry / stop / target / exit, open and close time in your time zone, chart screenshots (Plan / In trade / After), confluence, playbook and the Risk, Session, Idea, Execution, After and *Also log to* tiles.
-- **Position panel (open trades)** — add to the position (with a preview of the new average entry, total size and risk at the stop) and set **TP1–TP3 partial take-profits** by size or %. Mark each one Filled (time editable) or undo; **Close rest** closes what is left, and the trade closes on its own at zero. Every fill has its own fee (suggested, editable; saved trades are never recalculated). Realized Gross / Fees / Net shown together; R stays on the first entry with add-on risk shown separately; open risk and the daily cap use remaining size × |average entry − stop|. Offline, so no live unrealized P&L — the open size is valued at the stop and the next take-profit.
+- **Log trade drawer** — a top ticket block (symbol with market and venue inside, Long / Short, status, entry / stop / target / exit, size with the risk calc, open and close time in your time zone), one chip row (session, timeframe, setup, grade, fees, note, screenshots — each editable) and one collapsible **Details** section (Idea, Execution, Process, Review, Costs & instrument) with filled counters. Closed trades open on Review. Collapse Details for a quick log; the app remembers it. Chart screenshots (Plan / In trade / After), confluence, levels and *Also log to* are still there.
+- **Ladder / TP (open trades)** — **+** on Entry adds an entry (with a preview of the new average entry, total size and risk at the stop); **+** on Exit adds a **TP1–TP3** or partial exit by size or %, planned or filled. A ladder chip line under the prices opens the full panel, also reachable from the trade preview. Mark each one Filled (time editable) or undo; **Close rest** closes what is left, and the trade closes on its own at zero. Every fill has its own fee (suggested, editable; saved trades are never recalculated). Realized Gross / Fees / Net shown together (fees without a minus sign); R stays on the first entry with add-on risk shown separately; open risk and the daily cap use remaining size × |average entry − stop|. Offline, so no live unrealized P&L — the open size is valued at the stop and the next take-profit.
 - **Decimal input** — every number field accepts `.` or `,` and keeps exactly what you type, including when editing an open trade.
 - **Symbol search filtered by market** — pick Crypto, Futures, Forex… and the list shows only that market's instruments (with a fallback to other markets if nothing matches).
 - **Built-in instruments** across futures, forex, crypto (including Binance TradFi perps **SPYUSDT** and **QQQUSDT**, and bundled **Bybit** and **Bitunix** USDT linear perpetuals grouped by exchange), stocks, options and CFDs with contract multipliers and tick sizes; edit or add your own.
@@ -187,12 +187,12 @@ Each release page lists the hashes for that version in this format:
 | `Blotter-Setup-X.Y.Z.exe` | `<SHA256_SETUP>` |
 | `Blotter-X.Y.Z-portable.exe` | `<SHA256_PORTABLE>` |
 
-**Current release — [v0.3.11](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.11):**
+**Current release — [v0.3.12](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.12):**
 
 | File | SHA-256 |
 |---|---|
-| `Blotter-Setup-0.3.11.exe` | `d13f60068f6d959c3d0ff2617df88a5cd5dbfc4ffe7370df5dcbfe1a7ee9e40d` |
-| `Blotter-0.3.11-portable.exe` | `f67d099ab2f4cead026c084b689caf17e8682af3e8a0a2dd34d92b7867ee2adf` |
+| `Blotter-Setup-0.3.12.exe` | `40e85506a562e9a3a226aae20ef569009dfa60f30ba6608931c8097a6b62a310` |
+| `Blotter-0.3.12-portable.exe` | `0076712275fd0d8a0ba4d3222e14335b7ea7eb93e27b11f87e3ad31dc324b83f` |
 
 For newer versions, always use the hashes on that version's release page.
 
