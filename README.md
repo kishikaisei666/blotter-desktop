@@ -78,10 +78,12 @@
 - Plan ideas with symbol, direction, setup, levels and notes, then **Log trade from an idea** to prefill the ticket.
 - **Carry over:** ideas still open from earlier sessions are suggested in the next Morning prep — carry them in, or **Dismiss** the ones that are no longer relevant.
 - **Ideas tab** — every idea for the account in one place: filter by Open / Carried / Taken / Skipped / Missed / Archived, date range and symbol, search, edit inline, change status, carry into the open session, archive or delete — one at a time or in bulk. Each idea shows its origin day and carry history.
-- **Risk calc** — a right-side drawer from the calculator icon in the sidebar footer or shortcut 4 on any page. Size a position on any instrument: risk by $, % of balance or R; position size, risk in $ and ticks, R:R, fees (futures per contract, Binance/Bybit maker/taker per side) and net risk; notional and margin at your leverage for crypto; one click to log the trade prefilled, or save a planned draft.
+- **Risk calc** — a right-side drawer from the calculator icon in the sidebar footer or shortcut 4 on any page. Size a position on any instrument: risk by $, % of balance or R; position size, risk in $ and ticks, R:R, fees (futures per contract, Binance/Bybit maker/taker per side) and net risk; notional and margin at your leverage for crypto; one click to log the trade prefilled, or save a planned draft. **Add to open trade** mode sizes an add-on against an open trade's stop and shows the new average entry, total size, risk at the stop and how much of the daily cap the add uses; one click adds the fill.
 
 **Journal**
 - **Log trade drawer** — Long/Short, entry / stop / target / exit, open and close time in your time zone, chart screenshots (Plan / In trade / After), confluence, playbook and the Risk, Session, Idea, Execution, After and *Also log to* tiles.
+- **Position panel (open trades)** — add to the position (with a preview of the new average entry, total size and risk at the stop) and set **TP1–TP3 partial take-profits** by size or %. Mark each one Filled (time editable) or undo; **Close rest** closes what is left, and the trade closes on its own at zero. Every fill has its own fee (suggested, editable; saved trades are never recalculated). Realized Gross / Fees / Net shown together; R stays on the first entry with add-on risk shown separately; open risk and the daily cap use remaining size × |average entry − stop|. Offline, so no live unrealized P&L — the open size is valued at the stop and the next take-profit.
+- **Decimal input** — every number field accepts `.` or `,` and keeps exactly what you type, including when editing an open trade.
 - **Symbol search filtered by market** — pick Crypto, Futures, Forex… and the list shows only that market's instruments (with a fallback to other markets if nothing matches).
 - **Built-in instruments** across futures, forex, crypto (including Binance TradFi perps **SPYUSDT** and **QQQUSDT**, and bundled **Bybit** and **Bitunix** USDT linear perpetuals grouped by exchange), stocks, options and CFDs with contract multipliers and tick sizes; edit or add your own.
 - **Gross / Fees / Net** shown live in the drawer header and in every trade review.
@@ -185,12 +187,12 @@ Each release page lists the hashes for that version in this format:
 | `Blotter-Setup-X.Y.Z.exe` | `<SHA256_SETUP>` |
 | `Blotter-X.Y.Z-portable.exe` | `<SHA256_PORTABLE>` |
 
-**Current release — [v0.3.10](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.10):**
+**Current release — [v0.3.11](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.11):**
 
 | File | SHA-256 |
 |---|---|
-| `Blotter-Setup-0.3.10.exe` | `312f13de7406a0dc40a235eb952f5d5ea74bc09660eb7e7c6ed749618e41e56c` |
-| `Blotter-0.3.10-portable.exe` | `4716795185856664de907ff16e82c477348fbbecb54713f98f82faf694466433` |
+| `Blotter-Setup-0.3.11.exe` | `d13f60068f6d959c3d0ff2617df88a5cd5dbfc4ffe7370df5dcbfe1a7ee9e40d` |
+| `Blotter-0.3.11-portable.exe` | `f67d099ab2f4cead026c084b689caf17e8682af3e8a0a2dd34d92b7867ee2adf` |
 
 For newer versions, always use the hashes on that version's release page.
 
