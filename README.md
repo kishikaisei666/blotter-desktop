@@ -68,7 +68,7 @@
 - **Morning prep** — mood, news, bias, goals and trade ideas before the open.
 - **Close-out** — grade your plan, execution, risk and emotional control, and mark each idea Taken, Skipped, Missed or Carry.
 - **Day log** — every trading day with P&L, trades, grade and mood; searchable by notes and symbols.
-- **Trading-day start** — group trades by a custom day boundary (e.g. 17:00 New York for futures/FX).
+- **Trading day = your session** — while a session is open, every trade belongs to that day. With no session open, trades fall on the calendar day in your time zone; an 18:00 CME, 17:00 FX or custom day start is optional in Settings.
 - **Today and Ideas tabs** — Session holds both your day and your ideas. Morning prep shows your rules read-only; close-out asks "Followed my rules today?" (Yes / Partly / No) and shows your After routine; a During reminder shows while the session is open.
 
 **Trading plan — My rules in Playbook**
@@ -78,7 +78,7 @@
 - Plan ideas with symbol, direction, setup, levels and notes, then **Log trade from an idea** to prefill the ticket.
 - **Carry over:** ideas still open from earlier sessions are suggested in the next Morning prep — carry them in, or **Dismiss** the ones that are no longer relevant.
 - **Ideas tab** — every idea for the account in one place: filter by Open / Carried / Taken / Skipped / Missed / Archived, date range and symbol, search, edit inline, change status, carry into the open session, archive or delete — one at a time or in bulk. Each idea shows its origin day and carry history.
-- **Risk calc** — a right-side drawer from the sidebar or shortcut 4 on any page. Size a position on any instrument: risk by $, % of balance or R; position size, risk in $ and ticks, R:R, fees (futures per contract, Binance/Bybit maker/taker per side) and net risk; notional and margin at your leverage for crypto; one click to log the trade prefilled, or save a planned draft.
+- **Risk calc** — a right-side drawer from the calculator icon in the sidebar footer or shortcut 4 on any page. Size a position on any instrument: risk by $, % of balance or R; position size, risk in $ and ticks, R:R, fees (futures per contract, Binance/Bybit maker/taker per side) and net risk; notional and margin at your leverage for crypto; one click to log the trade prefilled, or save a planned draft.
 
 **Journal**
 - **Log trade drawer** — Long/Short, entry / stop / target / exit, open and close time in your time zone, chart screenshots (Plan / In trade / After), confluence, playbook and the Risk, Session, Idea, Execution, After and *Also log to* tiles.
@@ -104,6 +104,8 @@
 - **Multiple accounts** with their own starting balance and currency (including USDT / USDC, shown as `5,000.00 USDT`).
 - **Live FX** — daily ECB reference rates convert P&L, fees and risk into your account currency; manual overrides are kept, and offline the last saved rates are used.
 - **Full backup** to a single `.zip` (trades, screenshots, settings) and restore; **CSV** export/import with a documented column map; **automatic backups** on every close (last 10 kept).
+- **Exchange clocks** — New York, London and Tokyo in the sidebar: open / closed and a countdown to the next open or close, daylight saving handled, hours shown in your time zone on hover (computed locally, no network).
+- **Time zone picker** labelled by UTC offset and cities, e.g. `UTC+4 · Tbilisi/Dubai`.
 - **Day and night themes** (or follow Windows), collapsible sidebar, keyboard-friendly. Dark theme is graphite with a muted gold accent and tabular numbers. On Windows 11 the sidebar can use Mica (solid fallback on Windows 10).
 - **Automatic updates** for the installer version (see [Updating](#updating)).
 
@@ -183,12 +185,12 @@ Each release page lists the hashes for that version in this format:
 | `Blotter-Setup-X.Y.Z.exe` | `<SHA256_SETUP>` |
 | `Blotter-X.Y.Z-portable.exe` | `<SHA256_PORTABLE>` |
 
-**Current release — [v0.3.9](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.9):**
+**Current release — [v0.3.10](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.10):**
 
 | File | SHA-256 |
 |---|---|
-| `Blotter-Setup-0.3.9.exe` | `c7b4a65725ed2edcbdaf7ff4fbfb1b8820980ab25b9172446c8ba7c3b8f981d7` |
-| `Blotter-0.3.9-portable.exe` | `9aefbdf073629b024791e9b7d4d6be13d13cfda1a575160579ce3789e321984c` |
+| `Blotter-Setup-0.3.10.exe` | `312f13de7406a0dc40a235eb952f5d5ea74bc09660eb7e7c6ed749618e41e56c` |
+| `Blotter-0.3.10-portable.exe` | `4716795185856664de907ff16e82c477348fbbecb54713f98f82faf694466433` |
 
 For newer versions, always use the hashes on that version's release page.
 
