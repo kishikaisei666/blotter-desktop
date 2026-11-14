@@ -101,7 +101,7 @@
 - **Risk rules** — daily loss limit in R and %, risk per trade; warnings before you break them.
 
 **Money & data**
-- **Multiple accounts** with their own starting balance and currency.
+- **Multiple accounts** with their own starting balance and currency (including USDT / USDC, shown as `5,000.00 USDT`).
 - **Live FX** — daily ECB reference rates convert P&L, fees and risk into your account currency; manual overrides are kept, and offline the last saved rates are used.
 - **Full backup** to a single `.zip` (trades, screenshots, settings) and restore; **CSV** export/import with a documented column map; **automatic backups** on every close (last 10 kept).
 - **Day and night themes** (or follow Windows), collapsible sidebar, keyboard-friendly. Dark theme is graphite with a muted gold accent and tabular numbers. On Windows 11 the sidebar can use Mica (solid fallback on Windows 10).
@@ -183,12 +183,12 @@ Each release page lists the hashes for that version in this format:
 | `Blotter-Setup-X.Y.Z.exe` | `<SHA256_SETUP>` |
 | `Blotter-X.Y.Z-portable.exe` | `<SHA256_PORTABLE>` |
 
-**Current release — [v0.3.8](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.8):**
+**Current release — [v0.3.9](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.9):**
 
 | File | SHA-256 |
 |---|---|
-| `Blotter-Setup-0.3.8.exe` | `dcb394f98796dea6b54476117ee96aebff5ab90a79b42b5665d4cdafdc16c5d2` |
-| `Blotter-0.3.8-portable.exe` | `9a2831326e92ad6915617718de48de64e36f17bc245f4f45f95ae1cff5ca4897` |
+| `Blotter-Setup-0.3.9.exe` | `c7b4a65725ed2edcbdaf7ff4fbfb1b8820980ab25b9172446c8ba7c3b8f981d7` |
+| `Blotter-0.3.9-portable.exe` | `9aefbdf073629b024791e9b7d4d6be13d13cfda1a575160579ce3789e321984c` |
 
 For newer versions, always use the hashes on that version's release page.
 
