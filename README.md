@@ -82,7 +82,7 @@
 
 **Journal**
 - **Log trade drawer** — a top ticket block (symbol with market and venue inside, Long / Short, status, entry / stop / target / exit, size with the risk calc, open and close time in your time zone), one chip row (session, timeframe, setup, grade, fees, note, screenshots — each editable) and one collapsible **Details** section (Idea, Execution, Process, Review, Costs & instrument) with filled counters. Closed trades open on Review. Collapse Details for a quick log; the app remembers it. Chart screenshots (Plan / In trade / After), confluence, levels and *Also log to* are still there.
-- **Ladder / TP (open trades)** — **+** on Entry adds an entry (with a preview of the new average entry, total size and risk at the stop); **+** on Exit adds a **TP1–TP3** or partial exit by size or %, planned or filled. A ladder chip line under the prices opens the full panel, also reachable from the trade preview. Mark each one Filled (time editable) or undo; **Close rest** closes what is left, and the trade closes on its own at zero. Every fill has its own fee (suggested, editable; saved trades are never recalculated). Realized Gross / Fees / Net shown together (fees without a minus sign); R stays on the first entry with add-on risk shown separately; open risk and the daily cap use remaining size × |average entry − stop|. Offline, so no live unrealized P&L — the open size is valued at the stop and the next take-profit.
+- **Ladder / TP (open trades)** — **+** on Entry adds an entry (with a preview of the new average entry, total size and risk at the stop); **+** on Exit adds a take-profit (as many as you need, up to 20) or partial exit, sized in contracts / units by default or in %, planned or filled. Average prices show at the instrument's tick. A ladder chip line under the prices opens the full panel, also reachable from the trade preview. Mark each one Filled (time editable) or undo; **Close rest** closes what is left, and the trade closes on its own at zero. Every fill has its own fee (suggested, editable; saved trades are never recalculated). Realized Gross / Fees / Net shown together (fees without a minus sign); R stays on the first entry with add-on risk shown separately; open risk and the daily cap use remaining size × |average entry − stop|. Offline, so no live unrealized P&L — the open size is valued at the stop and the next take-profit.
 - **Decimal input** — every number field accepts `.` or `,` and keeps exactly what you type, including when editing an open trade.
 - **Symbol search filtered by market** — pick Crypto, Futures, Forex… and the list shows only that market's instruments (with a fallback to other markets if nothing matches).
 - **Built-in instruments** across futures, forex, crypto (including Binance TradFi perps **SPYUSDT** and **QQQUSDT**, and bundled **Bybit** and **Bitunix** USDT linear perpetuals grouped by exchange), stocks, options and CFDs with contract multipliers and tick sizes; edit or add your own.
@@ -187,12 +187,12 @@ Each release page lists the hashes for that version in this format:
 | `Blotter-Setup-X.Y.Z.exe` | `<SHA256_SETUP>` |
 | `Blotter-X.Y.Z-portable.exe` | `<SHA256_PORTABLE>` |
 
-**Current release — [v0.3.12](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.12):**
+**Current release — [v0.3.13](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.13):**
 
 | File | SHA-256 |
 |---|---|
-| `Blotter-Setup-0.3.12.exe` | `40e85506a562e9a3a226aae20ef569009dfa60f30ba6608931c8097a6b62a310` |
-| `Blotter-0.3.12-portable.exe` | `0076712275fd0d8a0ba4d3222e14335b7ea7eb93e27b11f87e3ad31dc324b83f` |
+| `Blotter-Setup-0.3.13.exe` | `6289e394d754e03b6a9179c8e7eea074bdf740bd2c85fd12110a338b5860337c` |
+| `Blotter-0.3.13-portable.exe` | `7b882fc2351af0fd01a6e9733e07e8c3a0267335ba815c6c33981c047a9395ae` |
 
 For newer versions, always use the hashes on that version's release page.
 
@@ -300,3 +300,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 ## Changelog
 
 Release notes for every version: **[github.com/kishikaisei666/blotter-desktop/releases](https://github.com/kishikaisei666/blotter-desktop/releases)**.
+
+- **[0.3.13](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.13)** — more than 3 take-profits per trade (up to 20), TP size defaults to quantity (u / % remembered), rounded read-only average entry / exit.
