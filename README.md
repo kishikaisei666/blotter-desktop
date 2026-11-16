@@ -78,7 +78,7 @@
 - Plan ideas with symbol, direction, setup, levels and notes, then **Log trade from an idea** to prefill the ticket.
 - **Carry over:** ideas still open from earlier sessions are suggested in the next Morning prep — carry them in, or **Dismiss** the ones that are no longer relevant.
 - **Ideas tab** — every idea for the account in one place: filter by Open / Carried / Taken / Skipped / Missed / Archived, date range and symbol, search, edit inline, change status, carry into the open session, archive or delete — one at a time or in bulk. Each idea shows its origin day and carry history.
-- **Risk calc** — a right-side drawer from the calculator icon in the sidebar footer or shortcut 4 on any page. Size a position on any instrument: risk by $, % of balance or R; position size, risk in $ and ticks, R:R, fees (futures per contract, Binance/Bybit maker/taker per side) and net risk; notional and margin at your leverage for crypto; one click to log the trade prefilled, or save a planned draft. **Add to open trade** mode sizes an add-on against an open trade's stop and shows the new average entry, total size, risk at the stop and how much of the daily cap the add uses; one click adds the fill.
+- **Risk calc** — a compact right-side drawer (fits without scrolling) from the calculator icon in the sidebar footer or shortcut 4 on any page. Pick the account and **market** (USDT accounts start on crypto) and size a position on any instrument: risk by $, % of balance or R; position size, risk in $ and ticks, R:R, fees (futures per contract, Binance/Bybit maker/taker per side) and net risk; notional and margin at your leverage for crypto; one click to log the trade prefilled, or save a planned draft. **Add to open trade** mode sizes an add-on against an open trade's stop and shows the new average entry, total size, risk at the stop and how much of the daily cap the add uses; one click adds the fill.
 
 **Journal**
 - **Log trade drawer** — a top ticket block (symbol with market and venue inside, Long / Short, status, entry / stop / target / exit, size with the risk calc, open and close time in your time zone), one chip row (session, timeframe, setup, grade, fees, note, screenshots — each editable) and one collapsible **Details** section (Idea, Execution, Process, Review, Costs & instrument) with filled counters. Closed trades open on Review. Collapse Details for a quick log; the app remembers it. Chart screenshots (Plan / In trade / After), confluence, levels and *Also log to* are still there.
@@ -187,12 +187,12 @@ Each release page lists the hashes for that version in this format:
 | `Blotter-Setup-X.Y.Z.exe` | `<SHA256_SETUP>` |
 | `Blotter-X.Y.Z-portable.exe` | `<SHA256_PORTABLE>` |
 
-**Current release — [v0.3.13](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.13):**
+**Current release — [v0.3.14](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.14):**
 
 | File | SHA-256 |
 |---|---|
-| `Blotter-Setup-0.3.13.exe` | `6289e394d754e03b6a9179c8e7eea074bdf740bd2c85fd12110a338b5860337c` |
-| `Blotter-0.3.13-portable.exe` | `7b882fc2351af0fd01a6e9733e07e8c3a0267335ba815c6c33981c047a9395ae` |
+| `Blotter-Setup-0.3.14.exe` | `199de5b9b7657aacc38d621f3e7e474f327f4abd81dc3afc1a233e29dc6b9b2a` |
+| `Blotter-0.3.14-portable.exe` | `25c977299da0a7321e82585f7fb3a95dbb926a1ee26b09b66fbcbe001785d575` |
 
 For newer versions, always use the hashes on that version's release page.
 
@@ -301,4 +301,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 
 Release notes for every version: **[github.com/kishikaisei666/blotter-desktop/releases](https://github.com/kishikaisei666/blotter-desktop/releases)**.
 
+- **[0.3.14](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.14)** — market selector in Risk calc (no longer stuck on Futures; USDT accounts start on crypto), compact Risk calc that fits without scrolling (one result card, fees & leverage folded into one line).
 - **[0.3.13](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.13)** — more than 3 take-profits per trade (up to 20), TP size defaults to quantity (u / % remembered), rounded read-only average entry / exit.
