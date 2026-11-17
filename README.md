@@ -187,12 +187,12 @@ Each release page lists the hashes for that version in this format:
 | `Blotter-Setup-X.Y.Z.exe` | `<SHA256_SETUP>` |
 | `Blotter-X.Y.Z-portable.exe` | `<SHA256_PORTABLE>` |
 
-**Current release — [v0.3.14](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.14):**
+**Current release — [v0.3.15](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.15):**
 
 | File | SHA-256 |
 |---|---|
-| `Blotter-Setup-0.3.14.exe` | `199de5b9b7657aacc38d621f3e7e474f327f4abd81dc3afc1a233e29dc6b9b2a` |
-| `Blotter-0.3.14-portable.exe` | `25c977299da0a7321e82585f7fb3a95dbb926a1ee26b09b66fbcbe001785d575` |
+| `Blotter-Setup-0.3.15.exe` | `cfe42b001a89ce1716302eceaaa0abcf614527849658268a01ec1eda45c88f53` |
+| `Blotter-0.3.15-portable.exe` | `0f545c482cf1150f71a15f4638e754ed5edb49250bf3644ef68cbafa3c003e97` |
 
 For newer versions, always use the hashes on that version's release page.
 
@@ -301,5 +301,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 
 Release notes for every version: **[github.com/kishikaisei666/blotter-desktop/releases](https://github.com/kishikaisei666/blotter-desktop/releases)**.
 
+- **[0.3.15](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.15)** — R uses the initial stop (moving the stop no longer changes R), FX auto-update fixed for USDT accounts, partial take-profits count toward the day, NY open counts as New York, faster close-out (open positions first, rules / mistakes / one lesson), weekly best setup and costliest mistake on Review, a much shorter Settings page, same-minute trades restored from backups.
 - **[0.3.14](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.14)** — market selector in Risk calc (no longer stuck on Futures; USDT accounts start on crypto), compact Risk calc that fits without scrolling (one result card, fees & leverage folded into one line).
 - **[0.3.13](https://github.com/kishikaisei666/blotter-desktop/releases/tag/v0.3.13)** — more than 3 take-profits per trade (up to 20), TP size defaults to quantity (u / % remembered), rounded read-only average entry / exit.
